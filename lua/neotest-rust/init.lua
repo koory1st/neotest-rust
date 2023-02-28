@@ -199,7 +199,7 @@ function adapter.build_spec(args)
 
         local strategy = {
             name = "Debug Rust Tests",
-            type = "lldb",
+            type = "codelldb",
             request = "launch",
             cwd = cwd or "${workspaceFolder}",
             stopOnEntry = false,
